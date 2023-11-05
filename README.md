@@ -2,15 +2,15 @@
 
 Interact with Sandboxie in Python
 
-## Sandboxie Plus fast start
+## Sandboxie fast start
 
 ```python
-from sandboxie import SandboxiePlus
+from sandboxie import Sandboxie
 
-sbie_plus = SandboxiePlus(installation_dir='Your Sandboxie Plus installation path')
-sbie_plus.create_sandbox('TestBox')
-sbie_plus.start('Path to the program to be launched', box='TestBox', wait=True)
-sbie_plus.delete_sandbox('TestBox')
+sbie = Sandboxie(installation_dir='Your Sandboxie Plus installation path')
+sbie.create_sandbox('TestBox')
+sbie.start('Path to the program to be launched', box='TestBox', wait=True)
+sbie.delete_sandbox('TestBox')
 ```
 
 ## SbieIni fast start

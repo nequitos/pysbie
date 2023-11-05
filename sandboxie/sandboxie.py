@@ -4,7 +4,7 @@ import os
 from .sbieini import SbieIni
 
 
-class SandboxiePlus:
+class Sandboxie:
 	def __init__(self, installation_dir=None, *args, **kwargs):
 		"""
 		Takes installation_dir as an argument,
@@ -25,8 +25,6 @@ class SandboxiePlus:
 		}
 		self.sbieini = SbieIni(self.installation_dir)
 
-		if not installation_dir:
-			self.installation_dir = str(os.environ.get('SANDBOXIE_INSTALL_DIR', r'C:\Program Files\Sandboxie-Plus'))
 		if 'DefaultBox' not in self.get_sandboxes():
 			self.create_default_box()
 
@@ -234,4 +232,4 @@ class SandboxiePlus:
 
 if __name__ == '__main__':
 	_path = r'C:\Program Files\Sandboxie-Plus'
-	sndb = SandboxiePlus(installation_dir=_path)
+	sndb = Sandboxie(installation_dir=_path)

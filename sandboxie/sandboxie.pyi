@@ -5,7 +5,7 @@ from .sbieini import SbieIni
 type Phase = 1 or 0
 
 
-class SandboxiePlus:
+class Sandboxie:
     def __init__(self,installation_dir: str, default_box_name: str) -> None:
         self.installation_dir = str
         self.sbieini_path = str

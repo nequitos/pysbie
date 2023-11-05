@@ -1,3 +1,3 @@
 from . import *
-from .sandboxie_plus import *
+from .sandboxie import *
 from .sbieini import *

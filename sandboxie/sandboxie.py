@@ -5,7 +5,7 @@ from .sbieini import SbieIni
 
 
 class Sandboxie:
-	def __init__(self, installation_dir=None, *args, **kwargs):
+	def __init__(self, installation_dir=None):
 		"""
 		Takes installation_dir as an argument,
 		if absent, looks for a folder in the environment variable

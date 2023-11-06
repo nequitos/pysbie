@@ -6,7 +6,7 @@ type Phase = 1 or 0
 
 
 class Sandboxie:
-    def __init__(self,installation_dir: str, default_box_name: str) -> None:
+    def __init__(self,installation_dir: str) -> None:
         self.installation_dir = str
         self.sbieini_path = str
         self.start_path = str

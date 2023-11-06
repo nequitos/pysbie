@@ -19,8 +19,8 @@ setup(
     install_requires=['requests'],
     classifiers=[
         'Programming Language :: Python :: 3.12',
-        'License :: GNU General Public License Version 3',
-        'Operation System :: Windows 7 or higher, 32-bit or 64-bit'
+        'License :: OSI Approved :: GNU General Public License (GPL)',
+        'Operation System :: Windows 10'
     ],
     keywords='sandboxie python',
     python_requires='>=3.9'
